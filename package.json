@@ -1,0 +1,14 @@
+{
+  "name": "slide-vip",
+  "version": "2.0.0",
+  "description": "Slide VIP: the rounds, seeds, hashes and bets behind the May 2026 session, and the scripts that check them",
+  "private": true,
+  "license": "MIT",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "verify": "node verify.js",
+    "bets": "node bets.js",
+    "all": "node verify.js && node bets.js",
+    "results": "node verify.js > results/verify.txt; node bets.js > results/bets.txt"
+  }
+}

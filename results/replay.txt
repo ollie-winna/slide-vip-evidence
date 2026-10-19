@@ -1,0 +1,16 @@
+rounds   data/slide-case-rounds.csv  (13125 rounds, ids 0..13124)
+bets     data/slide-case-bets.csv  (the 41 bets of 16 May, in 13 rounds between 5474 and 5501, staking 8,832,406.12 in total)
+shift    the session moved earlier or later by a fixed time;  the first round is the first to open at or after 2026-05-16 14:37:07 UTC plus the shift, and every bet moves by that same number of rounds, keeping its stake and the multiplier it was placed at
+won      a bet pays stake * multiplier if the multiplier is at or below the shifted round's result, else 0;  a round counts as won if any bet in it paid
+net      sum of payouts - sum of stakes, in USD
+
+ shift   offset  rounds         first open (UTC)     rounds won  bets won          payout              net
+  -20h    -2152  3322..3349     2026-05-15 18:37:18      4 / 13    8 / 41   14,294,266.45    +5,461,860.33
+   -5h     -537  4937..4964     2026-05-16 09:37:40      0 / 13    0 / 41            0.00    -8,832,406.12
+   -1h     -107  5367..5394     2026-05-16 13:37:26      6 / 13   10 / 41   15,792,066.70    +6,959,660.58
+   -5m       -8  5466..5493     2026-05-16 14:32:39      2 / 13    3 / 41    3,560,000.00    -5,272,406.12
+actual        0  5474..5501     2026-05-16 14:37:07      1 / 13    1 / 41      900,000.00    -7,932,406.12
+   +5m        9  5483..5510     2026-05-16 14:42:08      4 / 13    6 / 41   12,286,000.00    +3,453,593.88
+   +1h      108  5582..5609     2026-05-16 15:37:21      6 / 13    7 / 41   12,793,332.00    +3,960,925.88
+   +5h      538  6012..6039     2026-05-16 19:37:13      3 / 13    3 / 41    6,533,332.00    -2,299,074.12
+  +20h     2153  7627..7654     2026-05-17 10:37:39      1 / 13    2 / 41    3,850,000.00    -4,982,406.12

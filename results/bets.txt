@@ -1,0 +1,174 @@
+rounds   data/slide-case-rounds.csv  (13125 rounds)
+bets     data/slide-case-bets.csv  (62 bets in 21 rounds)
+client   000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+formula  float = hmac_sha256(server_seed, client_seed:0:0)[0..4] / 2^32;  result = max(1.00, floor(100 * 0.98 / float) / 100)
+checks   sha256(server_seed) == hashed_server_seed;  open_at <= placed_at <= end_at;  bet.result == result
+
+round 1495  open 2026-05-15 01:38:23.499  end 2026-05-15 01:38:43.603  result 1.37
+  hashed_server_seed  f13b8971fd5c8d1a5b90d09e42f3a5aabb70fadeb73756c47752e6a82d28a43a
+  server_seed         f4cbd710df00fedca1e64e64d3c787f6b90ce81ad4b7b372e9d019068bd9c7a7
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:38:33.278  stake  100000.00  result 1.37  ok
+
+round 1500  open 2026-05-15 01:41:11.050  end 2026-05-15 01:41:31.155  result 2.89
+  hashed_server_seed  fcf28dfaf982aec121216aa6bbb42e3cf2fbc5f195314f48c11705aba36be396
+  server_seed         47ab7f41ed5b2c50105bd866dc085e9e30b797cde668f115103a28fea544d1ec
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:41:11.350  stake  180000.00  result 2.89  ok
+  2026-05-15 01:41:17.871  stake   50000.00  result 2.89  ok
+  2026-05-15 01:41:23.061  stake   20000.00  result 2.89  ok
+
+round 1503  open 2026-05-15 01:42:51.418  end 2026-05-15 01:43:11.522  result 2.77
+  hashed_server_seed  eb647d336cc14c0a4dfe3403a2dbbcdd1f0953ea65e4e02e0d174322ea2c6683
+  server_seed         5111ac2a5d56c2923dc292e506f1ab3c6e18c9e00064de51f4a02a1c4eef3a80
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:43:01.031  stake  100000.00  result 2.77  ok
+  2026-05-15 01:43:05.063  stake   23333.00  result 2.77  ok
+  2026-05-15 01:43:10.791  stake   16599.85  result 2.77  ok
+
+round 1504  open 2026-05-15 01:43:24.907  end 2026-05-15 01:43:45.009  result 3.86
+  hashed_server_seed  ceb1eb3778759c09902d34f6d1ebdd54fc1bea910b2862a6dc5b4c99b282eb3a
+  server_seed         8881a74c001bb3f8d0a10da93076338dbbc81c3ecbf70a34c1db4d4a62926ead
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:43:33.222  stake  133333.00  result 3.86  ok
+  2026-05-15 01:43:37.562  stake   26666.00  result 3.86  ok
+  2026-05-15 01:43:42.743  stake    9907.00  result 3.86  ok
+
+round 1505  open 2026-05-15 01:43:58.392  end 2026-05-15 01:44:18.495  result 3.01
+  hashed_server_seed  50d2c10f7b1627c52921917c100f9b7ddc73bf96ff227b3f94af327dc22785a6
+  server_seed         e4ff3afc68be46ed6cc906abca97289c5decc905aa35277f77594a85aac063c5
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:44:04.771  stake  222222.00  result 3.01  ok
+  2026-05-15 01:44:08.208  stake   50000.00  result 3.01  ok
+  2026-05-15 01:44:15.342  stake   27778.00  result 3.01  ok
+
+round 1506  open 2026-05-15 01:44:31.882  end 2026-05-15 01:44:51.985  result 1.57
+  hashed_server_seed  f027dd87c098e21de6a998f866d4c289c876d898977f3ec10c13ce8653e72762
+  server_seed         7309a5ea27b22207d4817ba72198f52edf78a916ffefc0f419c07f59576ee7f3
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:44:42.007  stake  233333.00  result 1.57  ok
+  2026-05-15 01:44:44.751  stake   66667.24  result 1.57  ok
+
+round 1517  open 2026-05-15 01:50:40.265  end 2026-05-15 01:51:00.368  result 1.52
+  hashed_server_seed  074ab053d91748a2ed8d477a463245a52724c146cda64491bf4be822cba13a4f
+  server_seed         9cfad16e8a8761d0755faf0b2cb06d2f6d54f836873ae2b3351fa76fca4963d5
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 01:50:41.607  stake  200000.00  result 1.52  ok
+  2026-05-15 01:50:44.552  stake   70000.00  result 1.52  ok
+  2026-05-15 01:50:47.066  stake   30000.00  result 1.52  ok
+
+round 2816  open 2026-05-15 13:55:26.292  end 2026-05-15 13:55:46.408  result 1.11
+  hashed_server_seed  e0c3da7ab52773d21cbc6d40317cb376ed6d5f15660a1386d2066e8af259c0af
+  server_seed         2f1bf9bc24536f69d9ed56e6469f0ad51ecdc07d80eb83681150b9a1ffde7e55
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-15 13:55:32.004  stake  100000.00  result 1.11  ok
+  2026-05-15 13:55:35.355  stake   20000.00  result 1.11  ok
+  2026-05-15 13:55:37.237  stake   10080.15  result 1.11  ok
+
+round 5474  open 2026-05-16 14:37:07.415  end 2026-05-16 14:37:27.524  result 3.81
+  hashed_server_seed  18df8d009447aa850f57861c94df444c60aa7c2634c795d1b46ad855b770b98e
+  server_seed         474610cdcebb35e1549add1298bca7ec527a37769c678318fdfb5874a4e1fd98
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:37:09.128  stake  233333.00  result 3.81  ok
+  2026-05-16 14:37:14.504  stake   26108.40  result 3.81  ok
+  2026-05-16 14:37:20.479  stake   40000.00  result 3.81  ok
+
+round 5475  open 2026-05-16 14:37:40.837  end 2026-05-16 14:38:00.946  result 3.44
+  hashed_server_seed  a5f79bf5e940cb1d737697472d00ab159c713e222dea1cac2b0a08214655682c
+  server_seed         f1e1d0f1f2cec8d827b9e43f6cdb4eca3764cbf2223037461827cef2d6c78c79
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:37:48.560  stake  600000.00  result 3.44  ok
+  2026-05-16 14:37:52.430  stake   70000.00  result 3.44  ok
+  2026-05-16 14:37:54.600  stake   30000.00  result 3.44  ok
+
+round 5478  open 2026-05-16 14:39:21.149  end 2026-05-16 14:39:41.259  result 1.15
+  hashed_server_seed  ab3c3702cf253283f51e945aa574e77b650a94f71b66b9d407328d67900faa75
+  server_seed         1b2ae4200d0dd66d4a754ea842c06a0eb037a1c100c6046fc02a04158f1d55a8
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:39:32.362  stake  500000.00  result 1.15  ok
+  2026-05-16 14:39:35.701  stake   70000.00  result 1.15  ok
+  2026-05-16 14:39:41.085  stake   27992.93  result 1.15  ok
+
+round 5479  open 2026-05-16 14:39:54.584  end 2026-05-16 14:40:14.690  result 2.38
+  hashed_server_seed  49c140a66439a0806b7135a58b8401570e9762565de13a616b5748fc69ef4f56
+  server_seed         fd5c47777a3bdac3c1043c39502a925fa7b1012fb79c3682f138d90430988cc4
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:40:00.236  stake  800000.00  result 2.38  ok
+  2026-05-16 14:40:04.128  stake  150000.00  result 2.38  ok
+  2026-05-16 14:40:06.042  stake   50000.00  result 2.38  ok
+
+round 5482  open 2026-05-16 14:41:34.887  end 2026-05-16 14:41:54.995  result 2.33
+  hashed_server_seed  f8f074391018b0967c0c504ccbec458f98b6909356dbf3d8c712e732f892695c
+  server_seed         604162685c66487f148ab53a1ae3f05418146276520df08d7f608adae623ac95
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:41:42.883  stake  700000.00  result 2.33  ok
+  2026-05-16 14:41:47.516  stake  100000.00  result 2.33  ok
+  2026-05-16 14:41:53.444  stake   36000.00  result 2.33  ok
+
+round 5483  open 2026-05-16 14:42:08.322  end 2026-05-16 14:42:28.428  result 2.69
+  hashed_server_seed  59e0a6ba01728eab9232a06de4516e3e9fa1cab48922c4914c16cbb629b2fce1
+  server_seed         933b74433ef7a3136db1c720e2d3e0bfe5f5bee58a7cabfc49eeebbe8010119c
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:42:13.031  stake  700000.00  result 2.69  ok
+  2026-05-16 14:42:15.898  stake   70000.00  result 2.69  ok
+  2026-05-16 14:42:18.269  stake   30526.08  result 2.69  ok
+
+round 5486  open 2026-05-16 14:43:48.660  end 2026-05-16 14:44:08.767  result 2.38
+  hashed_server_seed  b34c32eeaac518f095e0a5da96e4ee56ef3c4256b7f794f12c8bf29d61c58d5d
+  server_seed         041332d7e3bbd458d26c9be2ec09f000c11bc54eef4498f77056c5d84807acdf
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:43:51.364  stake  900000.00  result 2.38  ok
+  2026-05-16 14:43:55.393  stake  160000.00  result 2.38  ok
+  2026-05-16 14:43:58.574  stake   40000.00  result 2.38  ok
+  2026-05-16 14:44:00.276  stake   24494.29  result 2.38  ok
+
+round 5489  open 2026-05-16 14:45:29.124  end 2026-05-16 14:45:49.230  result 4.15
+  hashed_server_seed  5d2829df4d4599431699a151acbcd976424427a2fdec6b568536445370d3e640
+  server_seed         00e7f7a1abeab10e50b1de1fce669ffccffef3df2d6b51457c810ace970ffd4b
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:45:31.028  stake  150000.00  result 4.15  ok
+  2026-05-16 14:45:35.998  stake   40000.00  result 4.15  ok
+  2026-05-16 14:45:37.223  stake    9910.10  result 4.15  ok
+
+round 5491  open 2026-05-16 14:46:35.990  end 2026-05-16 14:46:56.096  result 2.69
+  hashed_server_seed  f861237dd4391cbf1dd5b0314adc42f3a2a75b089fad781ec6d6fd7624a8ee6f
+  server_seed         09a1a1a4d280bef70834aa96a803a759afb61e81252026269ab9a909f62c5a21
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:46:47.828  stake  760000.00  result 2.69  ok
+  2026-05-16 14:46:51.410  stake  100000.00  result 2.69  ok
+  2026-05-16 14:46:53.023  stake   39595.43  result 2.69  ok
+
+round 5494  open 2026-05-16 14:48:16.275  end 2026-05-16 14:48:36.383  result 1.85
+  hashed_server_seed  9e65bb2d7c842d1d3268b26d7bc75cf010c10ec6d0418f5ee6848751110e37eb
+  server_seed         7c4713715e3c6890a99087947ff83574219859b812e71fa9800a03d14181a102
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:48:17.159  stake  150000.00  result 1.85  ok
+  2026-05-16 14:48:20.059  stake   50000.00  result 1.85  ok
+  2026-05-16 14:48:23.677  stake   24898.86  result 1.85  ok
+
+round 5498  open 2026-05-16 14:50:30.021  end 2026-05-16 14:50:50.130  result 2.69
+  hashed_server_seed  2c59dbfd6eb9588adf9e9b22e95b1f124e0a661fbcc8ed1ccba4c8049ad3b883
+  server_seed         d424df1a38ae88464a410953f5ef516709fec47a3aa758e6899495f9d1ee3599
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:50:35.710  stake  800000.00  result 2.69  ok
+  2026-05-16 14:50:38.960  stake  100000.00  result 2.69  ok
+  2026-05-16 14:50:41.853  stake   70000.00  result 2.69  ok
+  2026-05-16 14:50:43.925  stake   29550.47  result 2.69  ok
+
+round 5500  open 2026-05-16 14:51:36.959  end 2026-05-16 14:51:57.065  result 7.71
+  hashed_server_seed  45961c2f8d6c9e107d0e30a4ff4809769a796f17e721243a8f87d93aaff00638
+  server_seed         ec0fe84616906a8d829c2e0632065a95139d6803176a02530bcc61236195c68b
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:51:43.511  stake  150000.00  result 7.71  ok
+  2026-05-16 14:51:46.697  stake   70000.00  result 7.71  ok
+  2026-05-16 14:51:48.424  stake   29887.62  result 7.71  ok
+
+round 5501  open 2026-05-16 14:52:10.389  end 2026-05-16 14:52:30.494  result 1.15
+  hashed_server_seed  7c0fdb6933fca520621e6347548d86eb81d539d69eb92657069f4b0ae1204e36
+  server_seed         76e60c066ccc55be8b0879c0a9557ebc61cbbfde9a81d6ffede945e9721b77e8
+  client_seed         000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+  2026-05-16 14:52:14.537  stake  800000.00  result 1.15  ok
+  2026-05-16 14:52:17.020  stake   70000.00  result 1.15  ok
+  2026-05-16 14:52:18.809  stake   30108.94  result 1.15  ok
+
+PASS  62 / 62 bets placed inside their round window and settled on the result derived from the revealed server_seed

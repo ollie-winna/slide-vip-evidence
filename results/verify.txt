@@ -1,0 +1,32 @@
+file         data/slide-case-rounds.csv
+rounds       13125  ids 0..13124
+period       2026-05-14 10:59:49 .. 2026-05-19 13:48:40 UTC
+client_seed  000000000000000000033ab71b5fa7edcafe388e5f49719f1de8e1f8d0670460
+nonce        0
+formula      float = hmac_sha256(server_seed, client_seed:0:0)[0..4] / 2^32
+             result = max(1.00, floor(100 * 0.98 / float) / 100)
+
+sha256(server_seed) == hashed_server_seed     13125 / 13125  ok
+result == formula(server_seed)                13125 / 13125  ok
+id == prev.id + 1                             13124 / 13124  ok
+end_at > prev.end_at                          13124 / 13124  ok
+open_at < end_at                              13125 / 13125  ok
+
+ cashout  rounds >= t  observed  expected       rtp       z
+   1.01x        12705    96.80%    97.03%    97.77%   -1.55
+   1.50x         8560    65.22%    65.33%    97.83%   -0.28
+   2.00x         6439    49.06%    49.00%    98.12%   +0.14
+   3.00x         4313    32.86%    32.67%    98.58%   +0.47
+   3.50x         3651    27.82%    28.00%    97.36%   -0.47
+   4.00x         3202    24.40%    24.50%    97.58%   -0.28
+   5.00x         2576    19.63%    19.60%    98.13%   +0.08
+   6.00x         2136    16.27%    16.33%    97.65%   -0.18
+   8.00x         1600    12.19%    12.25%    97.52%   -0.21
+  10.00x         1303     9.93%     9.80%    99.28%   +0.49
+  15.00x          863     6.58%     6.53%    98.63%   +0.19
+  20.00x          655     4.99%     4.90%    99.81%   +0.48
+  35.00x          354     2.70%     2.80%    94.40%   -0.71
+  50.00x          263     2.00%     1.96%   100.19%   +0.36
+ 100.00x          124     0.94%     0.98%    94.48%   -0.41
+
+PASS  data/slide-case-rounds.csv: 13125 rounds reproduce from (server_seed, client_seed, nonce 0) and match hashed_server_seed
